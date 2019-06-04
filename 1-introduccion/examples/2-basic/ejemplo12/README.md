@@ -1,7 +1,7 @@
 ## Run App
 Ejecutar en consola
 ```
-pub run bin/dart
+pub run bin/main.dart
 ```
 
 Ejecutar en javascript
