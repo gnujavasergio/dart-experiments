@@ -21,7 +21,7 @@ main(List<String> arguments) {
     print(list[i]);
   }
 
-  // Utilizando fat arow
+  // Utilizando fat arrow
   list.forEach((color) => print(color));
 
   // Con llaves

@@ -42,3 +42,30 @@ class Portatil {
 Portatil hpPortatil = new Portatil();
 Portatil lenovoPortatil = Prtatil();
 ```
+- [Ejemplo1](../examples/5-poo/ejemplo1/README.md)
+
+## Metodos
+- El metodo en una clase es lo mismo que una funcion y aplicaria todos los casos que hay.
+    - Metodos con porametros obligatorios.
+    - Metodos con parametros opcionales posicionales.
+    - Metodos con parametros opcionales nombrados.
+    - Metodos con valores por defecto.
+    - Metodos con funciones arow.
+    - Metodos con parametros como funcion.
+- [Ejemplo2](../examples/5-poo/ejemplo2/README.md)    
+
+## Constructores
+- Constructor es una funcion especial el cual nos sirve para crear o instanciar un objeto.
+- **Tipos de constructores**
+    - Constructor por defecto
+    - Constructor con parametros
+        - Parametros obligatorios,
+        - Parametros opcionales nombrados
+        - Parametros opcionales posicionales
+    - Constructor nombrado
+- [Ejemplo3](../examples/5-poo/ejemplo3/README.md)    
+
+## Set y Get
+- Metodos para poder modificar y acceder a los atributos de una clase.
+- Para hacer que un atributo sea privado se tiene que colocar a un atributo con guion bajo (`_`);
+- [Ejemplo4](../examples/5-poo/ejemplo4/README.md)    
