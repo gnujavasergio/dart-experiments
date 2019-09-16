@@ -1,0 +1,3 @@
+enum TypeSkill {
+  BASIC, INTERMEDIATE, ADVANCED, EXPERT
+}

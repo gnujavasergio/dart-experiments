@@ -24,12 +24,12 @@
     - Javascript
     - C
 - Es POO.
-- Tiene un trasnpialdor a JS
+- Tiene un transpilador a JS
 - JIT Y AOT
     - AOT (Ahead Of Time): Compilado a un rapido y predecible codigo nativo. Totalmente personalisable
     - Puede se JIT (Just In Time): Compilado para una velocidad excepcional de desarrollo. (Esto incluye el popular **Hot Reload**)
 - Hace facil la creacion de animaciones y transiciones que corren a 60fps(frames por segundo).
-- Al ser compilado a codigo nativo, no hay puentes innesesarios para correr el codigo.
+- Al ser compilado a codigo nativo, no hay puentes innecesarios para correr el codigo.
 - Dart le permite a Flutter evitar el desarrollo de diseños en archivos independientes como JSX, XML o bien interfaces separadas.
 - Dart es relatimamente facil de aprender.
 
