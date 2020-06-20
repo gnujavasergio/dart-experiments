@@ -11,20 +11,6 @@ void main(List<String> args){
     print('Hola mundo');
 }
 ```
-
-## Variables
-- Variable: Espacios en memoria para almacenar un valor
-    - Variables sin tipo
-        - `var`
-    - Variable con tipo
-        - `int`
-        - `double`
-        - `String`
-        - `bool`
-    - Variables dinamicas
-        - `dynamic`
-- [Ejemplo1](../examples/2-basic/ejemplo1/README.md)
-
 ## Tipos de datos
 - Los tipos de datos en Dart son Objetos
 - Valor inicial de los tipos de datos sera null.
@@ -35,6 +21,32 @@ void main(List<String> args){
     - bool
     - Lists(Array) => Colecciones
     - Maps(Dictionary) => Colecciones
+
+## Variables
+- Para crear variables en dart se utiliza el formato CamelCase
+- Variable: Espacios en memoria para almacenar un valor
+- Las variables tienen que tener nombre significativos
+- Una variable no puedo comenzar por numeros
+- Una variable no puedo contener espacios y tampoco simbolos especiales
+- No deben ser keywords(palabras reservadas)
+- Variables sin tipo
+    - `var`
+- Variable con tipo
+    - `int`
+    - `double`
+    - `String`
+    - `bool`
+ - Variables dinamicas
+    - `dynamic`
+- [Ejemplo1](../examples/2-basic/ejemplo1/README.md)
+
+## Constantes
+- Constante `final`: Se utiliza cuando este en ejecucion y es ahi donde resien reserva memoria.
+- Constante `const`: Se utiliza al iniciar nuestro codigo y ya reserva ese espacio de memoria.
+- Caracteristicas
+    - No pude cambiarse
+    - Siempre se tiene que inicializar;    
+- [Ejemplo12](../examples/2-basic/ejemplo12/README.md)   
 
 ## Numeros
 - Los tipos de datos de numero pueden ser
@@ -61,6 +73,12 @@ void main(List<String> args){
 - [https://medium.com/flutter-community/simple-and-bug-free-code-with-dart-operators-2e81211cecfe](https://medium.com/flutter-community/simple-and-bug-free-code-with-dart-operators-2e81211cecfe
 )
 ## Operadores Aritmeticos
+- En que orden se evaluan las matematicas operaciones complejas
+    1. Parentesis
+    2. Exponenetes
+    3. Multiplicacion/Division
+    4. Adición/Sustracción
+- Una forma facil de recordar este orden es usando el acronimo PENDAS(ParentesisExponentesMultiplicaciónDivisiónAdiciónSustracció
 - Suma `+`
 - Resta `-`
 - Multiplicación `*`
@@ -69,27 +87,14 @@ void main(List<String> args){
 - Modulo `%` es el restante de una división
 - [Ejemplo5](../examples/2-basic/ejemplo5/README.md)
 
-## Operadores de igualdad y relacionales
+## Operadores de comparación
 - `==` igualdad
 - `!=` No igual o diferente
 - `<` menor que
 - `>` mayor que
-- `<=` menor igual que
-- `>=` mayor igual que
+- `<=` menor o igual que
+- `>=` mayor o igual que
 - [Ejemplo6](../examples/2-basic/ejemplo6/README.md)
-
-## Operadores Logicos
-- `!expr` Realiza una negación en la expresión
-- `&&` AND
-- `||` OR
-- [Ejemplo7](../examples/2-basic/ejemplo7/README.md)
-
-## Operadores de prueba de tipo
-- Utiles para verificar los tipos en tiempo de ejecución
-- `as` Typecast (También utilizado para especificar prefijos de biblioteca)
-- `is` Verdadero si el objeto es el tipo especificado
-- `is!` Falso si el objeto tiene el tipo especificado
-- [Ejemplo8](../examples/2-basic/ejemplo8/README.md)
 
 ## Operadores de Asignación
 - `??=` Para asignar sólo si la variable asignada es nula
@@ -110,6 +115,19 @@ a = a + b;
 ```
 - [Ejemplo9](../examples/2-basic/ejemplo9/README.md)
 
+## Operadores Logicos
+- `!expresión` Realiza una negación en la expresión
+- `&&` AND
+- `||` OR
+- [Ejemplo7](../examples/2-basic/ejemplo7/README.md)
+
+## Operadores de prueba de tipo
+- Utiles para verificar los tipos en tiempo de ejecución
+- `as` Typecast (También utilizado para especificar prefijos de biblioteca)
+- `is` Verdadero si el objeto es el tipo especificado
+- `is!` Falso si el objeto tiene el tipo especificado
+- [Ejemplo8](../examples/2-basic/ejemplo8/README.md)
+
 ## Operadores de incremento y decremento
 - `++i` Pre incremento
 - `i++` Post incremento
@@ -121,11 +139,3 @@ a = a + b;
 - El operador tenerario si lo utilizo en java, php, javascript ya podra utilizarlo en dart ya que se lo utiliza de la misma forma.
 - `condition ? (statement if true) : (statement if false);`
 - [Ejemplo11](../examples/2-basic/ejemplo11/README.md)
-
-## Constantes
-- Constante `final`: Se utiliza cuando este en ejecucion y es ahi donde resien reserva memoria.
-- Constante `const`: Se utiliza al iniciar nuestro codigo y ya reserva ese espacio de memoria.
-- Caracteristicas
-    - No pude cambiarse
-    - Siempre se tiene que inicializar;    
-- [Ejemplo12](../examples/2-basic/ejemplo12/README.md)   

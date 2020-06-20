@@ -1,18 +1,20 @@
 main(List<String> arguments) {
-  int edad = 18;
-  if (edad >= 18) {
-    print('El usuario tiene acceso Correcto');
+  int age = 18;
+  if (age == 18) {
+    print("Puedes votar, será tu 1ra votación");
+  } else if (age > 18) {
+    print("Puedes vota de nuevo");
   } else {
-    print('El usuario tiene acceso Incorrecto');
-  }  
+    print("Aun no puedes votar")
+  }
 
-  if (edad == 18) {
-    print('Es un adulo');
-  } else if (edad < 12) {
+  if (age == 18) {
+    print('Es un adulto');
+  } else if (age < 12) {
     print('Es un niño');
-  } else if (edad > 12 && edad < 18) {
+  } else if (age > 12 && age < 18) {
     print('Es adolesente');
-  } else if (edad > 60) {
+  } else if (age > 60) {
     print('Es un adulto mayor');
   } 
 }
