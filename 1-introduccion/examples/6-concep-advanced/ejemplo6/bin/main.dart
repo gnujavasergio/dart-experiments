@@ -10,6 +10,11 @@ try {
     //throwException();
     int result = a%b;
     assert(employee != null);
+    if(a < 5){
+        // codigo
+    } else {
+      throw Exception('No puedo ser menor a 5');
+    }
   } on CustomException catch(ce,ct){
     print("custom exception is been obtained: $ce");    
     print(ct);

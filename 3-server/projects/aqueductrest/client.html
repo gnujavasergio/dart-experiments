@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aqueduct OpenAPI Client</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@3.12.1/swagger-ui.css">
+</head>
+
+<body>
+<div id="swagger-ui"></div>
+<script src="https://unpkg.com/swagger-ui-dist@3.12.1/swagger-ui-standalone-preset.js"></script>
+<script src="https://unpkg.com/swagger-ui-dist@3.12.1/swagger-ui-bundle.js"></script>
+<script>
+    window.onload = function() {       
+        const ui = SwaggerUIBundle({
+            spec: {"openapi":"3.0.0","info":{"title":"fave_reads","description":"A Aqueduct application for managing a list of reads.","version":"0.0.1"},"servers":[{"url":"http://localhost:8888"}],"paths":{"/reads":{"parameters":[],"get":{"tags":["Reads"],"operationId":"getAllReads","parameters":[],"responses":{"200":{"description":"Successful response."}}},"post":{"tags":["Reads"],"operationId":"createNewRead","parameters":[],"requestBody":{"required":true,"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Read"}}}},"responses":{"200":{"description":"Successful response."}}}},"/reads/{id}":{"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"string"}}],"get":{"tags":["Reads"],"operationId":"getRead","parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer"}}],"responses":{"200":{"description":"Successful response."}}},"put":{"tags":["Reads"],"operationId":"updatedRead","parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer"}}],"requestBody":{"required":true,"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Read"}}}},"responses":{"200":{"description":"Successful response."}}},"delete":{"tags":["Reads"],"operationId":"deletedRead","parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer"}}],"responses":{"200":{"description":"Successful response."}}}},"/":{"parameters":[]},"/client":{"parameters":[]}},"components":{"schemas":{"Read":{"title":"Read","type":"object","properties":{"detail":{"title":"detail","type":"string","nullable":false,"readOnly":true},"id":{"title":"id","type":"integer","description":"This is the primary identifier for this object.\n","nullable":false,"readOnly":true},"title":{"title":"title","type":"string","description":"No two objects may have the same value for this field.\n","nullable":false},"author":{"title":"author","type":"string","nullable":false},"year":{"title":"year","type":"integer","nullable":false}},"description":""}},"responses":{},"parameters":{},"requestBodies":{},"headers":{},"securitySchemes":{},"callbacks":{}}},
+            dom_id: '#swagger-ui',
+            deepLinking: true,
+            presets: [
+                SwaggerUIBundle.presets.apis,
+                SwaggerUIStandalonePreset
+            ],
+            plugins: [
+                SwaggerUIBundle.plugins.DownloadUrl
+            ],
+            layout: "StandaloneLayout",
+        })
+        window.ui = ui
+    }
+</script>
+</body>
+
+</html>
+    
