@@ -4,9 +4,9 @@
 - Esta estructura de control es igual a java, c++, c#, JavaScript.
 - Las sintaxis basico para utilizar if-else:
 ```dart
-if(condicion){
+if (condicion){
       //Codigo al cumplir condicion
-}else{
+ }else{
       //Codigo al No cumplirse
 } 
 ```
