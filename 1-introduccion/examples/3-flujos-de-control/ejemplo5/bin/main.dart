@@ -1,11 +1,30 @@
 main(List<String> arguments) {
-  // while no entra y no ejecuta ningun codiog si nose cu mple la condicion
+  dynamic students = ['Rocio', 'Sergio', 'Daniel', 'Angel', 'Jhoel'];
+
+  print('---------while----------');
   int i = 0;
-  while(i <= 10) {
-    print("while ${i++}");
+  while(students.length > i) {
+    dynamic student = students[i];
+    greetStudents(student);
+    i++;
   }
-  // do while se ejecuta una primera vez siempre.
+
+  dynamic teachers = ['Sergio', 'Angel', 'Daniel', 'Diego'];
+
+  print('--------do-while-----------');
+  int j = 0;
   do {
-    print("do while $i");
-  } while(i <= 10);
+    String teacher = teachers[j];
+    greetTeachers(teacher);
+    j++;
+  } while (teachers.length > j);
+}
+
+
+void greetStudents(String student) {
+  print('Hola, $student');
+}
+
+void greetTeachers(String teacher) {
+  print('Hola, $teacher');
 }

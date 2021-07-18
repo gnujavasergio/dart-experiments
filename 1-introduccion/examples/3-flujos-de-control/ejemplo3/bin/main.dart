@@ -2,13 +2,16 @@ main(List<String> arguments) {
   int value = 2;
   switch (value) {
     case 1:
-      print('1');
+      print('Soy uno!');
       break;
-    case 2:
-      print('2');
+    case 10:
+      print('Soy un 10!');
+      break;
+    case 100:
+      print('Soy un 100!')
       break;
     default:
-      print("Default $value");
+      print("No soy nada $value");
   }
 
   String speakSpanish = "Bolivia";

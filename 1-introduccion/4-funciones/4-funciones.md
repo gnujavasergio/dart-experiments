@@ -20,7 +20,7 @@ void main(){
 ## Funciones
 - Son una coleccion de declaraciones agrupadas para desarrollar una operacion
 ```dart
-void/int/String/../ nomFunction([params]){
+void /int/String/../ nomFunction([params]){
     // codigo
     return regresaResultado
 }

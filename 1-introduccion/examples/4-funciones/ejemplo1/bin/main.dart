@@ -1,25 +1,28 @@
 
 // Función Principal
 main(List<String> arguments) {
-  add();
-  addWithParam(3, 5);
-  int result = addWithReturn(3, 5);
-  print(result);
+  functionWithoutParam();
+  functionWithParam('Sergio','Ochoa');
+
+  String language = addWithReturn();
+  print('Lenguaje de programación: ' + language);
   print(greeting("Sergio"));
+
   // Funciones como en javascript
   suma();
-  resta();
-  print(multiplicacion(4, 5));
 }
 
-void add(){
-  print(3+5);
+// Función sin parametros
+void functionWithoutParam(){
+  print('Dart');
 }
 
-void addWithParam(int a, int b){
+// Función con parametros
+void functionWithParam(String firstName, String lastName){
   print(a+b);
 }
 
+// Funciónes con retorno
 int addWithReturn(int a, int b){
   return a + b;
 }
@@ -28,15 +31,7 @@ String greeting(String name){
   return "Welcome $name";
 }
 
-
+// Funciones como en javascript
 suma(){
   print(3+5);
-}
-
-void resta(){
-  print(3-2);
-}
-
-int multiplicacion(a,b){
-  return a * b;
 }

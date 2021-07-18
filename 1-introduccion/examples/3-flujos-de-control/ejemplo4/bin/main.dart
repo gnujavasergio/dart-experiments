@@ -1,31 +1,36 @@
 main(List<String> arguments) {
   // incrementar
+  print('-------Incrementar----------')
   for (int i = 0; i <= 10; i++) {
     print('Numero $i');
   }
 
-  print("-------------------------------");
+  print("----------Decrementar-----------");
   // Decrementar
   for (int i = 10; i > 0; i--) {
     print('Numero $i');
   }
 
-  print("-------------------------------");
-  List<String> list = ['Rojo', 'Verde', 'Azul'];
-  for (String color in list) {
-    print(color);
+  List<String> students = ['Rocio', 'Sergio', 'Daniel', 'Angel', 'Jhoel'];
+
+  print("-----------for------------");
+  for (var i = 0; i < students.length; i++) {
+    print(students[i]);
   }
 
-  print("-------------------------------");
-  for (var i = 0; i < list.length; i++) {
-    print(list[i]);
+
+  print("----------for...in-----------");
+  for (String student in students) {
+    print(student);
   }
 
   // Utilizando fat arrow
-  list.forEach((color) => print(color));
+  print("----------forEach with fat arrow-----------");
+  students.forEach((student) => print(student));
 
   // Con llaves
-  list.forEach((color) {
-    print(color);
+  print("----------forEach-----------");
+  students.forEach((student) {
+    print(student);
   });
 }
