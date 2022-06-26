@@ -24,11 +24,11 @@ main(List<String> arguments) {
 }
 
 class Location {
-  String country;
-  String state;
-  String city;
-  String street;
-  String number;
+  String? country;
+  String? state;
+  String? city;
+  String? street;
+  String? number;
 
   // Constructor por defecto
   Location(){}
@@ -43,8 +43,8 @@ class Materia {
 }
 
 class Carrera {
-  String name;
-  String nivel;
+  String? name;
+  String? nivel;
 
   // contructor con parametros nombrados 
   Carrera({this.name, this.nivel});
@@ -55,13 +55,13 @@ class Student {
   String lastName;
   int age;
   String phone;
-  Location location;
-  Materia materia;
-  Carrera carrera;
+  Location? location;
+  Materia? materia;
+  Carrera? carrera;
 
   // Constructores con parametros obligatorio y opcionales nombrados
-  Student(String firstName, String lastName, int age, String phone,
-      {Location location, Materia materia, Carrera carrera}) {
+  Student(this.firstName, this.lastName,this.age, this.phone,
+      {this.location, this.materia, this.carrera}) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
@@ -82,13 +82,13 @@ class Teacher {
   String firstName;
   String lastName;
   String phone;
-  Location location;
-  Materia materia;
-  Carrera carrera;
+  Location? location;
+  Materia? materia;
+  Carrera? carrera;
 
 // Constructores con parametros obligatorio y opcionales posicionales
-  Teacher(String firstName, String lastName, String phone,
-      [Location location, Materia materia, Carrera carrera]) {
+  Teacher(this.firstName, this.lastName, this.phone,
+      [this.location, this.materia, this.carrera]) {
     this.firstName = firstName;
     this.lastName = lastName;    
     this.phone = phone;
@@ -104,7 +104,7 @@ class Teacher {
   }
 
   // Constructor nombrado  
-  Teacher.getInstance({this.firstName,this.lastName, this.phone, this.location, this.materia, this.carrera});
+  Teacher.getInstance({this.firstName = "",this.lastName, this.phone, this.location, this.materia, this.carrera});
 }
 
 

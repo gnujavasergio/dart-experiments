@@ -9,6 +9,13 @@
             "program": "bin/main.dart",
             "request": "launch",
             "type": "dart"
+        },
+        {
+            "name": "Dart (bin/main.dart)",
+            "type": "dart",
+            "request": "launch",
+            "cwd": "1-introduccion/examples/2-basic/9-operadores-test-tipo/main",
+            "program": "bin/main.dart"
         }
     ]
 }

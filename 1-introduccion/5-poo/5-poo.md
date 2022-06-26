@@ -109,8 +109,7 @@ Portatil lenovoPortatil = Prtatil();
 - A menudo existen clases que sirven para definir un tipo generico pero que no tiene sentido instanciar(crear un objeto
   de ella).
 - Por Ejemplo
-    - Puede tener sentido instanciar un circulo pero a lo mejor no instanciar una figura, porque ¿Que figura es? ¿Cual
-      es su area? ¿cual es su perimetro?
+    - Puede tener sentido instanciar un circulo pero a lo mejor no instanciar una figura, porque ¿Que figura es? ¿Cual es su area? ¿cual es su perimetro?
 - Una clase abstracta significa que tiene que ser heredada.
 - Un metodo abstracto significa que tiene que ser sobreescrito.
 - Una clase con uno o varios metodos abstractos tiene que ser declarada abstracta.
