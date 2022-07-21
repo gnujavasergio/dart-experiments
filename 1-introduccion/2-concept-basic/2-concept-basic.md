@@ -17,7 +17,6 @@ void main(List<String> args){
 ```
 
 ## Tipos de datos
-
 - Los tipos de datos en Dart son Objetos
 - Valor inicial de los tipos de datos sera null.
     - num
