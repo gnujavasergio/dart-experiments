@@ -12,6 +12,7 @@ void main(List<String> arguments) {
   print("y: ${p.y}");
 
   print(p is Point);
+  print(p is Object);
 }
 
 class Point {

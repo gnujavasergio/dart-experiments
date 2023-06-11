@@ -5,7 +5,7 @@ void main() {
 
   // Booleanos sin tipo
   dynamic isPro = true;
-  var isDev = false;
+  var isDev = null;
 
   bool? value = null;
 

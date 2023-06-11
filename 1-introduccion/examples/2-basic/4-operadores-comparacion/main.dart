@@ -22,7 +22,7 @@ void main(List<String> arguments) {
   print("price >= price = ${price >= price}");
 
   // <
-  print("price > 1500 = ${price < 1500}");
+  print("price < 1500 = ${price < 1500}");
 
   // <=
   print("price <= price = ${price <= price}");

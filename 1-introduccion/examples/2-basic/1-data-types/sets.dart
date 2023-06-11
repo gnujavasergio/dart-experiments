@@ -20,7 +20,7 @@ void main() {
   /**
    * Con Tipo
    */
-  Set<int> enteros = {1, 2, 3, 4, 5};
+  Set<int> enteros = {1, 2, 3, 4, 5, 5};
   enteros.add(6);
   print(enteros);
 

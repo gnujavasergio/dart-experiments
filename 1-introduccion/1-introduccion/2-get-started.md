@@ -29,11 +29,11 @@ export PATH="$PATH:/usr/lib/dart/bin"
 
 ### Create project con dart
 
-console-simple: A simple command-line application. (default)
-console-full: A command-line application sample.
-package-simple: A starting point for Dart libraries or applications.
-server-shelf: A server app using `package:shelf`
-web-simple: A web app that uses only core Dart libraries.
+- console-simple: A simple command-line application. (default)
+- console-full: A command-line application sample.
+- package-simple: A starting point for Dart libraries or applications.
+- server-shelf: A server app using `package:shelf`
+- web-simple: A web app that uses only core Dart libraries.
 
 #### Usar dart console
 ```bash

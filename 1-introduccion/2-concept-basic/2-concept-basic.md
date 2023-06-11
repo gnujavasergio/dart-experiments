@@ -111,6 +111,7 @@ void main(List<String> args){
 - Multiplicación `*`
 - División `/`
 - Modulo `%` es el restante de una división
+- Division de enteros `~/`
 - Potencia `**` calcula la potencia de un numero
 - [Ejemplo5](../examples/2-basic/ejemplo5/README.md)
 
@@ -158,7 +159,7 @@ a = a + b;
 
 - `||` OR
 
-![](images/image3.png)
+![](images/image2.png)
 - [Ejemplo7](../examples/2-basic/ejemplo7/README.md)
 
 ## Operadores de incremento y decremento
